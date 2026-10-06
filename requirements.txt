@@ -3,3 +3,5 @@ uvicorn
 mlflow
 scikit-learn
 joblib
+pytest
+httpx
