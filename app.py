@@ -24,6 +24,11 @@ class PredictionRequest(BaseModel):
     features: list[float]
 
 
+@app.get("/")
+def health():
+    return {"status": "healthy"}
+
+
 # Prediction endpoint
 @app.post("/predict")
 def predict(request: PredictionRequest):
