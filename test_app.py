@@ -8,7 +8,7 @@ def test_health():
     response = client.get("/")
 
     assert response.status_code == 200
-    # assert response.status_code == 500   # intentionally wrong to check CI CD pipeline on render
+    # assert response.status_code == 500   # intentionally wrong to check CI CD pipeline on render..
     assert response.json() == {"status": "healthy"}
 
 
