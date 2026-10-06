@@ -26,7 +26,7 @@ class PredictionRequest(BaseModel):
 
 @app.get("/")
 def health():
-    return {"status": "healthy"}  # API health check
+    return {"status": "healthy"}  # API health checking
 
 
 # Prediction endpoint
